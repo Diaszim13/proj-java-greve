@@ -8,14 +8,14 @@ public class Peca {
     private String nome;
     private String descricao;
     private BigDecimal preco;
-    private int fornecedorId;
+    private Fornecedor fornecedor;
 
-    public Peca(int idPeca, String nome, String descricao, BigDecimal preco, int fornecedorId) {
+    public Peca(int idPeca, String nome, String descricao, BigDecimal preco, Fornecedor fornecedorId) {
         this.idPeca = idPeca;
         this.nome = nome;
         this.descricao = descricao;
         this.preco = preco;
-        this.fornecedorId = fornecedorId;
+        this.fornecedor = fornecedorId;
     }
 
     public int getIdPeca() {
@@ -50,12 +50,12 @@ public class Peca {
         this.preco = preco;
     }
 
-    public int getFornecedorId() {
-        return fornecedorId;
+    public Fornecedor getFornecedorId() {
+        return fornecedor;
     }
 
-    public void setFornecedorId(int fornecedorId) {
-        this.fornecedorId = fornecedorId;
+    public void setFornecedorId(Fornecedor fornecedorId) {
+        this.fornecedor = fornecedorId;
     }
 
     @Override
@@ -65,7 +65,7 @@ public class Peca {
                 ", nome='" + nome + '\'' +
                 ", descricao='" + descricao + '\'' +
                 ", preco=" + preco +
-                ", fornecedorId=" + fornecedorId +
+                ", fornecedorId=" + fornecedor +
                 '}';
     }
 }

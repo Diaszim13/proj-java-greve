@@ -10,9 +10,8 @@ public class Pessoa {
     private String cidade;
     private String telefone;
     private String email;
-    private boolean isAdmin;
 
-    public Pessoa(int idPessoa, String cpf, String nome, String rua, String bairro, String cidade, String telefone, String email, boolean isAdmin) {
+    public Pessoa(int idPessoa, String cpf, String nome, String rua, String bairro, String cidade, String telefone, String email) {
         this.idPessoa = idPessoa;
         this.cpf = cpf;
         this.nome = nome;
@@ -21,7 +20,6 @@ public class Pessoa {
         this.cidade = cidade;
         this.telefone = telefone;
         this.email = email;
-        this.isAdmin = isAdmin;
     }
 
     public int getIdPessoa() {
@@ -88,13 +86,6 @@ public class Pessoa {
         this.email = email;
     }
 
-    public boolean isAdmin() {
-        return isAdmin;
-    }
-
-    public void setAdmin(boolean admin) {
-        isAdmin = admin;
-    }
 
     @Override
     public String toString() {
@@ -107,7 +98,6 @@ public class Pessoa {
                 ", cidade='" + cidade + '\'' +
                 ", telefone='" + telefone + '\'' +
                 ", email='" + email + '\'' +
-                ", isAdmin=" + isAdmin +
                 '}';
     }
 }

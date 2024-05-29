@@ -11,6 +11,8 @@ public class NotaFiscal {
     private Double valor;
     private StatusNota status;
 
+    private Pagamento pagamento;
+
     public NotaFiscal() {}
 
     public NotaFiscal(Long id, Integer numeroNF, Double valor, StatusNota status) {
